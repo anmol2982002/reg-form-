@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{>header}}
+</head>
+<body>
+{{>navbar}}
+<div class="jumbotron">
+<form action="/register" method="post" onsubmit="(e)=>{e.preventDefault()}">
+
+    <div class="form-group">
+    <label for="exampleInputName1">First Name</label>
+    <input type="text" class="form-control" name="firstname" id="exampleInputName1"  placeholder="Enter First Name">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" name="email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+   <div class="form-group">
+    <label for="exampleInputphone1">Phone</label>
+    <input type="number" class="form-control" name="phone"  id="exampleInputphone1"  placeholder="Enter Your Number">
+  </div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Male
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Female
+  </label>
+</div>
+
+    <div class="form-group">
+    <label for="exampleInputName2">Last Name</label>
+    <input type="text" class="form-control" name="lastname"  id="exampleInputName2"  placeholder="Enter Last Name">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputage1">Age</label>
+    <input type="number" class="form-control" name="age" id="exampleInputage1" placeholder="age">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+  </div>
+
+    <div class="form-group">
+    <label for="exampleInputcPassword1">Confirm Password</label>
+    <input type="password" class="form-control" name="confirmpassword" id="exampleInputPassword2" placeholder="confirm Password">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+</div>
+</body>`
+</html>
